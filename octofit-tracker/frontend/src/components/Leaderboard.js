@@ -5,12 +5,12 @@ const Leaderboard = () => {
   const [leaders, setLeaders] = useState([]);
 
   useEffect(() => {
-    fetch('https://legendary-chainsaw-jj994xpw4wj7c9p5-8000.app.github.dev/api/leaderboard')
+    fetch('https://sturdy-happiness-xv95j7xw7vf99w6-8000.app.github.dev/api/leaderboard')
       .then(response => response.json())
       .then(data => setLeaders(data))
       .catch(error => console.error('Error fetching leaderboard:', error));
   }, []);
-
+  
   return (
     <div className="container mt-4">
       <h1 className="text-center">Leaderboard</h1>

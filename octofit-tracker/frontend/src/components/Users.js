@@ -5,7 +5,7 @@ const Users = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://legendary-chainsaw-jj994xpw4wj7c9p5-8000.app.github.dev/api/users')
+    fetch('https://sturdy-happiness-xv95j7xw7vf99w6-8000.app.github.dev/api/users')
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching users:', error));

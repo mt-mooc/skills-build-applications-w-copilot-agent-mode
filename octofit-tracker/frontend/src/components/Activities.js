@@ -5,7 +5,7 @@ const Activities = () => {
   const [activities, setActivities] = useState([]);
 
   useEffect(() => {
-    fetch('https://legendary-chainsaw-jj994xpw4wj7c9p5-8000.app.github.dev/api/activities')
+    fetch('https://sturdy-happiness-xv95j7xw7vf99w6-8000.app.github.dev/api/activities')
       .then(response => response.json())
       .then(data => setActivities(data))
       .catch(error => console.error('Error fetching activities:', error));
